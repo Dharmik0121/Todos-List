@@ -25,7 +25,6 @@ function App() {
     setTodos(todos.filter((e) => {
       return e !== todo;
     }));
-    localStorage.setItem("todos", JSON.stringify(todos));
   }
 
   const addTodo = (Name, School) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { propTypes } from 'react-bootstrap/esm/Image'
+import PropTypes from 'prop-types'
 export default function Header(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
@@ -27,10 +27,10 @@ export default function Header(props) {
   )
 }
 
-// Header.propTypes = {
-//     title: propTypes.string
-// }
-
+Header.propTypes = {
+    title: PropTypes.string,
+    searchbar: PropTypes.bool
+}
 
 // If you don't give title the default title is display
 Header.defaultProps = {
